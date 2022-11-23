@@ -6,6 +6,9 @@ ADBERTO MELO - 2213938 - adbertomelo@gmail.com
 EDUARDO CAVALCANTE - 2213946 - eduardobcavalcante@hotmail.com
 FRANCISCO TIAGO BARROS CONDE - 2213830 - ftiagobconde@gmail.com
 
+ENDEREÇO DO REPOSITÓRIO NO GITHUB
+https://github.com/aesley/ADS-TRABALHO-FINAL.git
+
 DESCRIÇÃO:
 
 1.  Definir uma equipe de 3 a 5 integrantes, criar um repositório público no GitHub e adicionar membros da equipe como colaboradores. A atividade deve incluir: lista de membros da equipe, endereço do repositório público e foto da página de colaboradores do GitHub O repositório deve ser público para revisão de conteúdo produzido.
