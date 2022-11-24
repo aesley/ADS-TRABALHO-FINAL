@@ -57,7 +57,14 @@ public class Main {
 				double valorVolumeCubo = volumeCubo.calVol();
 				System.out.println("O Volume do Cubo: " + valorVolumeCubo);
 			}
-			
+			if (opcao == 12){
+
+				AreaTriangEquil areaTriangEquil = new AreaTriangEquil();
+				areaTriangEquil.setLado(numeroA);
+
+				double valorArea = areaTriangEquil.calAreaTriEq();
+				System.out.println("A área do triâgulo equilátero é: " + valorArea);
+			}
 			if (opcao == 13) {
 				AREACirculo areaCirculo = new AREACirculo();
 				areaCirculo.setRaio(numeroA);
