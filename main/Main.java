@@ -15,7 +15,7 @@ public class Main {
 		
 		double numeroA, numeroB = 0 ;
 		while (true) {
-			System.out.print("Digite uma opção (1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 5-exponencial, 6-raiz, 7-piso, 8-teto, 9-Perimetro do quadrado, 10-Area do quadrado,13- Area do circulo,14- Perimetro circulo 0-sair): ");
+			System.out.print("Digite uma opção (1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 5-exponencial, 6-raiz, 7-piso, 8-teto, 9-Perimetro do quadrado, 10-Area do quadrado, 11- Volume do Cubo, 12- Área do Triângulo Equilátero, 13- Area do circulo,14- Perimetro circulo 0-sair): ");
 			opcao = scanner.nextInt();
 			
 			if(opcao == 0)
@@ -49,6 +49,15 @@ public class Main {
 				double valorArea = areaQuadrado.calculaArea();
 				System.out.println("A Area do Quadrado: " + valorArea);
 			}
+
+			if (opcao == 11){
+				VolumeCubo volumeCubo = new VolumeCubo();
+				volumeCubo.setAresta(numeroA);
+
+				double valorVolumeCubo = volumeCubo.calVol();
+				System.out.println("O Volume do Cubo: " + valorVolumeCubo);
+			}
+			
 			if (opcao == 13) {
 				AREACirculo areaCirculo = new AREACirculo();
 				areaCirculo.setRaio(numeroA);
