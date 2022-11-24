@@ -36,11 +36,15 @@ public class Calculadora {
 			}
 	
 	public double raiz(double numeroA) { //TIAGO
-		return 0;
+		if(numeroA < 0){
+			System.out.println("Não existe raiz quadrada de número negativo no conjunto dos números reais");
+			return 0;
+		}
+		return Math.sqrt(numeroA);
 	}
 	
 	public double exponencial(double numeroA, double numeroB) { //TIAGO
-		return 0;
+		return Math.pow(numeroA, numeroB);
 	}
 	
 	public double piso(double numeroA) { // BETO
