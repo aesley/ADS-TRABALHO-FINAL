@@ -15,7 +15,7 @@ public class Main {
 		
 		double numeroA, numeroB = 0 ;
 		while (true) {
-			System.out.print("Digite uma opção (1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 5-exponencial, 6-raiz, 7-piso, 8-teto, 9-Perimetro do quadrado, 10-Area do quadrado,  0-sair): ");
+			System.out.print("Digite uma opção (1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 5-exponencial, 6-raiz, 7-piso, 8-teto, 9-Perimetro do quadrado, 10-Area do quadrado,13- Area do circulo,14- Perimetro circulo 0-sair): ");
 			opcao = scanner.nextInt();
 			
 			if(opcao == 0)
@@ -49,6 +49,20 @@ public class Main {
 				double valorArea = areaQuadrado.calculaArea();
 				System.out.println("A Area do Quadrado: " + valorArea);
 			}
+			if (opcao == 13) {
+				AREACirculo areaCirculo = new AREACirculo();
+				areaCirculo.setRaio(numeroA);
+				
+				double valorAreaCirculo = areaCirculo.calculaAreaCirculo();
+				System.out.println("A Area do Circulo: " + valorAreaCirculo);
+			}
+			if (opcao == 14) {
+				PERIMETROCirculo perimetroCirculo = new PERIMETROCirculo();
+				perimetroCirculo.setRaio(numeroA);
+				
+				double perimetroDoCirculo = perimetroCirculo.calcularPerimetroCirculo();
+				System.out.println("O perimetro do Círculo é: " + perimetroDoCirculo);
+			}
 			if (opcao <6) {
 				System.out.print("Digite o segundo numero: ");
 				numeroB = scanner.nextDouble();
@@ -72,7 +86,7 @@ public class Main {
 				}
 				case 5:{
 					System.out.println(calculadora.exponencial(numeroA, numeroB));
-				//	break;
+					break;
 				}
 				default:
 					System.out.println("Digite um número entre 0 e 10");
