@@ -1,7 +1,4 @@
 package util;
-import java.io.*;
-
-
 
 public class Calculadora {
 	
@@ -11,11 +8,27 @@ public class Calculadora {
 	}
 	
 	public double subtracao(double numeroA, double numeroB) { //EDUARDO
-		return 0;
+		return numeroA - numeroB;
 	}
 	
 	public double divisao(double numeroA, double numeroB) { //EDUARDO
-		return 0;
+		try
+			{
+			if (numeroA / numeroB < Double.MAX_VALUE)
+		{
+				return numeroA / numeroB;
+		}
+			else 
+			{
+				System.out.println("Divisão por zero");
+				return -1;
+			}
+			}
+			catch (Exception e1) 
+			{
+				System.out.println("Erro ao executar a divisão por zero");
+				return 0;		
+	}
 	}
 	
 	public double multiplicacao(double numeroA, double numeroB) { //Aesley
