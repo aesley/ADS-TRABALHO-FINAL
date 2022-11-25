@@ -48,10 +48,10 @@ public class Calculadora {
 	}
 	
 	public double piso(double numeroA) { // BETO
-		return 0;
+		return Math.floor(numeroA);
 	}
 	
 	public double teto(double numeroA) { //BETO
-		return 0;
+		return Math.ceil(numeroA);
 	}
 }
