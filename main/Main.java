@@ -15,7 +15,16 @@ public class Main {
 		
 		double numeroA, numeroB = 0 ;
 		while (true) {
-			System.out.print("Digite uma opção (1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 5-exponencial, 6-raiz, 7-piso, 8-teto, 9-Perimetro do quadrado, 10-Area do quadrado, 11- Volume do Cubo, 12- Área do Triângulo Equilátero, 13- Area do circulo,14- Perimetro circulo 0-sair): ");
+			System.out.print("""
+								Digite uma opção (
+									1-soma, 2-subtracao, 3-multiplicacao, 4-divisao, 
+									5-exponencial, 6-raiz, 7-piso, 8-teto, 
+									9-Perimetro do quadrado, 10-Area do quadrado, 
+									11- Volume do Cubo, 12- Área do Triângulo Equilátero, 
+									13- Area do circulo,14- Perimetro circulo,
+									15- Módulo, 
+									0-sair): """);
+
 			opcao = scanner.nextInt();
 			
 			if(opcao == 0)
@@ -78,6 +87,11 @@ public class Main {
 				
 				double perimetroDoCirculo = perimetroCirculo.calcularPerimetroCirculo();
 				System.out.println("O perimetro do Círculo é: " + perimetroDoCirculo);
+			}
+			if (opcao == 15){
+				System.out.print("Digite o segundo numero: ");
+				numeroB = scanner.nextDouble();
+				System.out.println("O módulo de " + numeroA + " e " + numeroB + " é: " + Modulo.GetModulo(numeroA, numeroB));;		
 			}
 			if (opcao <6) {
 				System.out.print("Digite o segundo numero: ");
