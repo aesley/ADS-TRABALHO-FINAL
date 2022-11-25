@@ -22,7 +22,7 @@ public class Main {
 									9-Perimetro do quadrado, 10-Area do quadrado, 
 									11- Volume do Cubo, 12- Área do Triângulo Equilátero, 
 									13- Area do circulo,14- Perimetro circulo,
-									15- Módulo, 
+									15- Módulo, 16-Número de dígitos
 									0-sair): """);
 
 			opcao = scanner.nextInt();
@@ -93,6 +93,9 @@ public class Main {
 				numeroB = scanner.nextDouble();
 				System.out.println("O módulo de " + numeroA + " e " + numeroB + " é: " + Modulo.GetModulo(numeroA, numeroB));;		
 			}
+			if (opcao == 16){
+				System.out.println("O número de dígitos do número informado é: " + Digitos.NumDigitos(numeroA));		
+			}			
 			if (opcao <6) {
 				System.out.print("Digite o segundo numero: ");
 				numeroB = scanner.nextDouble();
